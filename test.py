@@ -1,6 +1,9 @@
+from math import *  # should be at top of screen
+
 #  Proof of Life
 
 print('hello world')
+# import pdb;pdb.set_trace()
 user_name = 'Chance'
 user_age = '34'
 print('Hello, my name is ' + user_name + ' and I am ' + user_age + ' years old!')
@@ -47,8 +50,11 @@ print(pow(4, 2))
 print(max(4, 8))
 print(min(4, 8))
 print(round(7.879))
-from math import *  # should be at top of screen
 print(floor(4.678))
 print(ceil(4.678))
 print(sqrt(16))
+
+name1 = input("Enter a name: ")
+num2 = input("Enter an age: ")
+print('Hello ' + name1 + ' i see that you are ' + num2 + ' years old!')
 
