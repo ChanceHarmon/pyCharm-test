@@ -54,7 +54,37 @@ print(floor(4.678))
 print(ceil(4.678))
 print(sqrt(16))
 
-name1 = input("Enter a name: ")
-num2 = input("Enter an age: ")
-print('Hello ' + name1 + ' i see that you are ' + num2 + ' years old!')
+# num1 = input("Enter a number: ")
+# num2 = input("Enter another number: ")
+# result = int(num1) + int(num2)  # whole numbers
+# result2 = float(num1) + float(num2)  # can use decimals
+# print(result)
+# print(result2)
+
+# mad libs
+# color = input("Enter a color: ")
+# plural_noun = input("Enter a plural noun: ")
+# celebrity = input("Enter a celebrity: ")
+
+# print("Roses are " + color)
+# print(plural_noun + " are blue")
+# print("I love " + celebrity)
+
+# lists/arrays
+
+friends = ["Brad", "Yosh", "David", "Jim", "James"]
+print(friends[1])
+print(friends[-1])
+print(friends[1:4])
+friends[2] = "Josh"
+print(friends[2])
+
+lucky_numbers = [2, 4, 7, 8, 3]
+# friends.extend(lucky_numbers)
+friends.append("Rocky")
+friends.insert(1, "Joe")  # two parameters, index and then the value
+friends.remove("Josh")
+# friends.clear() clears the list
+# friends.pop() same as JS
+friends.inde
 
