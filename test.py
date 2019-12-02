@@ -99,6 +99,7 @@ coordinates = (4, 5)
 
 print(coordinates[0])
 
+
 # functions
 # keyword of def, def name():
 # def say_hi():
@@ -113,3 +114,14 @@ def say_hi(name):
 
 say_hi("Chance")
 
+
+def cube(num):
+    return num*num*num
+
+
+result = cube(4)
+
+print(result)
+
+# return breaks out of the function, no code after can be reached
+# if statements
