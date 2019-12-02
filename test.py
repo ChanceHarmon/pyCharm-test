@@ -86,5 +86,30 @@ friends.insert(1, "Joe")  # two parameters, index and then the value
 friends.remove("Josh")
 # friends.clear() clears the list
 # friends.pop() same as JS
-friends.inde
+print(friends.index("Brad"))
+print(friends)
+friends.sort()
+print(friends)
+lucky_numbers.reverse()
+print(lucky_numbers)
+
+# tuples data structure immutable, cant be changed or modified
+# used for data that never changes
+coordinates = (4, 5)
+
+print(coordinates[0])
+
+# functions
+# keyword of def, def name():
+# def say_hi():
+#     print("Hello Chance")
+#
+# say_hi
+
+# template literals (f"string {variable}")
+def say_hi(name):
+    print(f"Hello {name}")
+
+
+say_hi("Chance")
 
