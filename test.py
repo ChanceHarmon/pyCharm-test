@@ -225,7 +225,24 @@ while i <= 5:
 
 # for loops
 
+for letter in 'Some string I made up':
+    print(letter)
 
+friends = ['me', 'you', 'we']
+for friend in friends:
+    print(friend)
+
+for idx in range(5, 11):
+    print(idx)
+
+for idx in range(len(friends)):
+    print(friends[idx])
+
+for idx in range(5):
+    if idx == 0:
+        print('I am the first iteration')
+    else:
+        print('Not the first iteration')
 
 
 
