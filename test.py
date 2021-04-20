@@ -125,3 +125,79 @@ print(result)
 
 # return breaks out of the function, no code after can be reached
 # if statements
+
+is_chance = True
+is_happy = True
+if is_chance:
+    print('Chance is still at the keys')
+else:
+    print('Someone stole my computer!')
+
+if is_chance or is_happy:
+    print('Chance could be happy')
+
+if is_chance and is_happy:
+    print('Chance is happy!')
+elif is_chance and not is_happy:
+    print('Cheer up Chance')
+else:
+    print('Cheer up Stranger')
+
+
+def max_num(num1, num2, num3):
+    if num1 >= num2 and num1 >= num3:
+        return num1
+    elif num2 >= num1 and num2 >= num3:
+        return num2
+    else:
+        return num3
+
+
+print(max_num(2, 4, 6))
+
+
+# New calculator
+#
+# num1 = float(input('Enter the first number: '))
+# operator = input('Enter the operation: ')
+# num2 = float(input('Enter the second number: '))
+#
+# if operator == '+':
+#     print(num1 + num2)
+# elif operator == '-':
+#     print(num1 - num2)
+# elif operator == '/':
+#     print(num1 / num2)
+# elif operator == '*':
+#     print(num1 * num2)
+# else:
+#     print('Invalid operator')
+
+
+# Dictionaries
+# check monthConversions?
+month_conversions = {
+    'Jan': 'January',
+    'Feb': 'February',
+    'Mar': 'March',
+    'Apr': 'April',
+    'May': 'May',
+    'Jun': 'June',
+    'Jul': 'July',
+    'Aug': 'August',
+    'Sep': 'September',
+    'Oct': 'October',
+    'Nov': 'November',
+    'Dec': 'December'
+}
+
+print(month_conversions['Feb'])
+print(month_conversions.get('Feb'))
+print(month_conversions.get('Sas', 'Default text I added'))
+
+
+# While loops
+
+
+
+
