@@ -244,5 +244,65 @@ for idx in range(5):
     else:
         print('Not the first iteration')
 
+# Exponent function
+
+print(2**3)
+
+
+def raise_to_power(base, power):
+    pow_result = 1
+    for index in range(power):
+        pow_result = pow_result * base
+    return pow_result
+
+
+print(raise_to_power(3, 5))
+
+# 2d lists and nested loops
+
+number_grid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [0]
+]
+print(number_grid[2][1])
+grid_total = 0
+for row in number_grid:
+    sum_total = 0
+    for column in row:
+        sum_total += column
+    grid_total += sum_total
+
+print(grid_total)
+
+# Translator
+
+
+def translate(phrase):
+    translation = ''
+    for letter in phrase:
+        if letter.lower() in "aeiou":
+            if letter.isupper():
+                translation = translation + "CCH"
+            else:
+                translation = translation + "cch"
+        else:
+            translation = translation + letter
+    return translation
+
+
+print(translate('A big long phrase to translate'))
+print(translate(input('Enter a phrase for me to translate: ')))
+
+'''
+This is
+a
+multiline 
+comment
+'''
+
+
+
 
 
