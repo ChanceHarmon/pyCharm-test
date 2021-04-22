@@ -1,4 +1,6 @@
 from math import *  # should be at top of screen
+from Student import Student
+from Student import NewStudent
 
 #  Proof of Life
 
@@ -293,7 +295,7 @@ def translate(phrase):
 
 
 print(translate('A big long phrase to translate'))
-print(translate(input('Enter a phrase for me to translate: ')))
+# print(translate(input('Enter a phrase for me to translate: ')))
 
 '''
 This is
@@ -301,6 +303,106 @@ a
 multiline 
 comment
 '''
+
+# Try Except
+
+# try:
+#     number = int(input('Enter a number: '))
+#     print(number)
+# except ValueError:
+#     print('Invalid Input, please enter a number')
+# except ZeroDivisionError as err:
+#     print(err)
+
+# Reading from Files
+
+# the second arg is the mode to open the file, r+ is read and write
+# open('filename.txt', 'r')
+#
+# employee_name = open('filename.txt', 'r')
+# print(employee_name.readable())  # returns bool if file is readable
+# print(employee_name.read())
+# print(employee_name.readline())  # Reads one line at a time
+# print(employee_name.readlines())  # returns a list, each index is a line
+#
+# for employee in employee_name.readlines():
+#     print(employee)
+
+# don't forget to close it
+# employee_name.close()
+
+
+# Writing to and appending to files
+
+# employee_name = open('filename.txt', 'a')  # a appends a write to the end of the file
+# # employee_name = open('filename.txt', 'w')  # w overwrites entire file
+# # employee_name = open('newfilename.txt', 'w')  # w create a new file if it doesn't exist
+#
+# employee_name.write('new employee')
+# employee_name.write('\nnew employee')  # adds the append to a new line instead of the same line over and over
+#
+# employee_name.close()
+
+
+# Modules and pip
+# This was basically the same as npm
+# stored in external Lib, Lib directory, and third party is in Lib/site-packages
+# Basically just have fun trying them out as needed for projects
+
+
+# Classes and Objects
+# Student class in Student.py
+
+student1 = Student('Chance', 'Math', 4.0, False)
+student2 = Student('Not Chance', 'English', 2.0, True)
+student3 = NewStudent('Today', 'Juliet', 'Pain', 3.5, True)
+print(student1)
+print(student1.name)
+print(student1.on_honor_roll())
+print(student2.on_honor_roll())
+print(student3.on_honor_roll())
+print(student3.start_date, student3.name)
+ex
+
+# Multiple choice quiz 361-393
+
+question_prompts = [
+    'What color are apples?\n(a) Red/Green\n(b) Purple\n(c) Orange\n\n',
+    'What color are bananas?\n(a) Red/Green\n(b) Blue\n(c) Yellow\n\n',
+    'What color are strawberries?\n(a) Red\n(b) Purple\n(c) Green\n\n'
+]
+
+
+class Question:
+
+    def __init__(self, prompt, answer):
+        self.prompt = prompt
+        self.answer = answer
+
+
+questions = [
+    Question(question_prompts[0], 'a'),
+    Question(question_prompts[1], 'c'),
+    Question(question_prompts[2], 'a')
+]
+
+
+def run_test(question_list):
+    score = 0
+    for q in question_list:
+        answer = input(q.prompt)
+        if answer == q.answer:
+            score += 1
+    print(f'You got {score} out of {len(question_list)} correct')
+
+
+# run_test(questions)
+
+
+
+
+
+
 
 
 
